@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjula - Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4db6ac;
+            --secondary-color: #e0f2f1;
+            --text-color: #2e2e2e;
+            --highlight: #00796b;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f0f9ff, #fcfcfc);
+            color: #222;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #6ec1e4;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+	.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #007acc;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 5px;
+        }
+
+        ul, p, table {
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .contact a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: var(--highlight);
+            text-decoration: underline;
+        }
+
+        section:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e6f3fb;
+            font-size: 0.9rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <img src="C:\Users\elcot\Downloads\manju pic.jpg" alt="Manjula's Photo" class="profile-image">
+        <div class="header-text">
+            <h1>Manjula S</h1>
+            <p>Web Developer | HTML , CSS & JavaScript Enthusiast</p>
+        </div>
+    </div>
+</header>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 9894659816</p>
+        <p><strong>Email:</strong> <a href="mailto:manjulasivasamy02@gmail.com">manjulasivasamy02@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manjula-sivasamy-524692345" target="_blank">manjula-sivasamy</a></p>
+    </section>
+
+    <section>
+        <h2>Objective</h2>
+        <p>I aspire to work in a dynamic environment where I can contribute my creativity and technical skills to develop innovative and user-centric web solutions. My goal is to continuously grow as a developer while creating meaningful digital experiences.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree / Course</th>
+                    <th>University / Board</th>
+                    <th>Percentage / CGPA</th>
+                    <th>Year of Passing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.Sc. Information Technology</td>
+                    <td>Nallamuthu Gounder Mahalingam College, Pollachi</td>
+                    <td>68%</td>
+                    <td>Pursuing (2025)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Technical:</strong> HTML, CSS, JavaScript, Responsive Design</li>
+            <li><strong>Soft Skills:</strong> 
+            <li>Creativity</li>
+            <li>Leadership</li>
+            <li>Good communication skill</li>
+            <li>Problem solving skill</li>
+            <li>HTML & CSS</li>
+            <li>Responsive Web Design</li></li>
+            <li><strong>Creative:</strong> UI/UX Thinking, Visual Design</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Strength</h2>
+        <ul>
+            <li>Active listener</li>
+            <li>Self motivated</li>
+            <li>Honesty</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>NPTEL (Python for Data Science) - 61%</li>
+            <li>C, C++, Python - A Grade</li>
+            <li>HTML, CSS, JavaScript Certification - A+ Grade</li>
+            <li>Data Science & Big Data Analytics - 65%</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Participation</h2>
+        <ul>
+            <li>"VOX POPULI" - English Voice Forum</li>
+            <li>"Real-time Implementation using IOT" Workshop</li>
+            <li>"Advanced Technologies for Mobile & Handset Service" Workshop</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Personal Details</h2>
+        <p><p><strong>Languages known:</strong> English, Tamil</p>
+        <p><strong>Date of Birth:</strong> 02-04-2004</p>
+        <p><strong>Marital Status:</strong> Single</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>Gender:</strong> Female</p><strong>Address:</strong> 2/41, Illupanagaram, Ramachandrapuram (Post), Udumalpet (Tk), Tiruppur (Dist.)</p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 S. Manjula. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            const trigger = window.innerHeight * 0.85;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if(sectionTop < trigger){
+                    section.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
